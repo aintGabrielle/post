@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import localFont from "next/font/local";
+import { motion } from "framer-motion";
 
 const bhineka = localFont({
   src: [
@@ -13,16 +14,27 @@ const bhineka = localFont({
 const Hero = () => {
   return (
     <div className="w-full h-screen z-0 mt-16">
-      <div className="w-full h-screen top-0 left-0 fixed bg-yellow-400 -z-10">
+      <motion.div className="w-full h-screen top-0 left-0 fixed bg-yellow-400 -z-10">
         <Image
           className="object-contain md:object-cover"
           src={"/instaribbon.png"}
           fill
           alt="Insta Ribbon"
         />
-      </div>
+      </motion.div>
       <div className=" grid grid-cols-1 md:grid-cols-2 w-full gap-11 h-[90%]">
-        <div className="flex pt-4 md:pt-0 items-center flex-col px-4 md:justify-center w-full h-full">
+        <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            delay: 1,
+          }}
+          className="flex pt-4 md:pt-0 items-center flex-col px-4 md:justify-center w-full h-full"
+        >
           <div className="">
             <h1 className="font-semibold text-2xl md:text-4xl text-white">
               WE ARE
@@ -38,16 +50,22 @@ const Hero = () => {
             businesses thrive in the digital space, by delivering instant,
             high-end quality content that sells
           </p>
-        </div>
+        </motion.div>
         <div className="flex justify-center items-center">
-          <div className="w-full h-72 md:w-[90%] z-0 md:h-[90%] relative">
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            transition={{ type: "spring" }}
+            className="w-full h-72 md:w-[90%]  md:h-[90%] relative z-0"
+          >
             <Image
               src={"/intern.png"}
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-contain md:object-contain"
               alt="Intern"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

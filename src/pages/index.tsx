@@ -1,12 +1,12 @@
 import Hero from "@/components/Hero";
-import Trusted from "@/components/Trusted";
+import Team from "@/components/Team";
 import React from "react";
 
 const index = () => {
   return (
     <div>
       <Hero />
-      <Trusted />
+      <Team />
     </div>
   );
 };

@@ -30,12 +30,7 @@ const Navbar = () => {
       <div className="w-full max-w-4xl flex items-center  rounded-full mx-auto bg-red-600  justify-between px-4 py-2">
         <div className="relative w-12 h-12 md:w-16 md:h-16 scale-150 md:scale-150">
           {/* Logo Here */}
-          <Image
-            src={"/logowhite.png"}
-            alt="White Logo"
-            fill
-            objectPosition="center"
-          />
+          <Image src={"/logowhite.png"} alt="White Logo" fill />
         </div>
         <div className="hidden md:flex space-x-2 text-xl text-white">
           <Link href={"/"}>HOME</Link>
@@ -79,8 +74,8 @@ const Navbar = () => {
             onClick={statusHandler}
             className={
               status
-                ? "w-full h-screen visible bg-red-900 opacity-90 absolute top-0 left-0 z-10"
-                : "w-full h-screen hidden bg-red-900 opacity-90 absolute top-0 left-0 z-10"
+                ? "w-full h-screen visible bg-red-900 opacity-90 fixed top-0 left-0 z-10"
+                : "w-full h-screen hidden bg-red-900 opacity-90 fixed top-0 left-0 z-10"
             }
           ></div>
         </div>
