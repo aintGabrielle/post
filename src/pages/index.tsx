@@ -1,3 +1,4 @@
+import Benchmark from "@/components/Benchmark";
 import Hero from "@/components/Hero";
 import Team from "@/components/Team";
 import React from "react";
@@ -7,6 +8,7 @@ const index = () => {
     <div>
       <Hero />
       <Team />
+      {/* <Benchmark /> */}
     </div>
   );
 };

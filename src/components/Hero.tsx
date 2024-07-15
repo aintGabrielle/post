@@ -14,10 +14,10 @@ const bhineka = localFont({
 const Hero = () => {
   return (
     <div className="w-full h-screen z-0 mt-16">
-      <motion.div className="w-full h-screen top-0 left-0 fixed bg-yellow-400 -z-10">
+      <motion.div className="w-full h-screen top-0 left-0 fixed  -z-10">
         <Image
           className="object-contain md:object-cover"
-          src={"/instaribbon.png"}
+          src={"/wavebg.png"}
           fill
           alt="Insta Ribbon"
         />
@@ -36,33 +36,33 @@ const Hero = () => {
           className="flex pt-4 md:pt-0 items-center flex-col px-4 md:justify-center w-full h-full"
         >
           <div className="">
-            <h1 className="font-semibold text-2xl md:text-4xl text-white">
+            <h1 className="font-semibold text-2xl md:text-4xl text-red-600">
               WE ARE
             </h1>
             <h1
-              className={`font-semibold text-4xl md:text-7xl text-white ${bhineka.className}`}
+              className={`font-semibold text-4xl md:text-7xl text-red-600 ${bhineka.className}`}
             >
-              INSTA POST PH
+              Insta Post Ph
             </h1>
           </div>
-          <p className="text-justify text-sm md:text-xl w-full max-w-xs font-semibold">
+          <p className="text-justify text-black text-sm md:text-xl w-full max-w-xs font-semibold">
             Content marketing and social media marketing agency, helping
             businesses thrive in the digital space, by delivering instant,
             high-end quality content that sells
           </p>
         </motion.div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center rounded-xl">
           <motion.div
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{ type: "spring" }}
-            className="w-full h-72 md:w-[90%]  md:h-[90%] relative z-0"
+            className="w-full h-72 md:w-[90%]  md:h-[90%] relative z-0 rounded-xl"
           >
             <Image
-              src={"/intern.png"}
+              src={"/doings.png"}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-contain md:object-contain"
+              className="object-contain md:object-contain rounded-xl"
               alt="Intern"
             />
           </motion.div>
