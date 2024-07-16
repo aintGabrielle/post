@@ -27,14 +27,14 @@ const Navbar = () => {
 
   return (
     <nav className="w-full fixed top-0  mt-2 flex items-center z-30">
-      <div className="w-full max-w-4xl flex items-center  rounded-full mx-auto bg-red-600  justify-between px-4 py-2">
+      <div className="w-full max-w-4xl flex items-center  rounded-full mx-auto bg-yellow-400  justify-between px-4 py-2">
         <div className="relative w-12 h-12 md:w-16 md:h-16 scale-150 md:scale-150">
           {/* Logo Here */}
           <Image src={"/logowhite.png"} alt="White Logo" fill />
         </div>
         <div className="hidden md:flex space-x-2 text-xl text-white">
           <Link href={"/"}>HOME</Link>
-          <Link href={"/"}>ABOUT</Link>
+          <Link href={"about"}>ABOUT</Link>
           <Link href={"/"}>WORKS</Link>
           <Link href={"/"}>CONTACT</Link>
         </div>
@@ -74,8 +74,8 @@ const Navbar = () => {
             onClick={statusHandler}
             className={
               status
-                ? "w-full h-screen visible bg-red-900 opacity-90 fixed top-0 left-0 z-10"
-                : "w-full h-screen hidden bg-red-900 opacity-90 fixed top-0 left-0 z-10"
+                ? "w-full h-screen visible bg-yellow-400 opacity-90 fixed top-0 left-0 z-10"
+                : "w-full h-screen hidden bg-yellow-400 opacity-90 fixed top-0 left-0 z-10"
             }
           ></div>
         </div>

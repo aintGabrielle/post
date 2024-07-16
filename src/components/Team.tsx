@@ -45,7 +45,7 @@ const Team = () => {
       >
         WHAT CAN WE DO?
       </h1>
-      <motion.div ref={targetRef} style={{ x }} className="w-full p-8">
+      <div className="w-full p-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {doings.map((item, index) => (
             <div key={index} className="p-4 bg-red-600 rounded-lg  ">
@@ -58,7 +58,7 @@ const Team = () => {
             </div>
           ))}
         </div>
-      </motion.div>
+      </div>
     </main>
   );
 };

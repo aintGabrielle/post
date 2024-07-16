@@ -13,7 +13,7 @@ const bhineka = localFont({
 });
 const Hero = () => {
   return (
-    <div className="w-full h-screen z-0 mt-16">
+    <div className="w-full h-screen z-0 mt-16 bg-yellow-400 md:bg-transparent rounded-3xl">
       <motion.div className="w-full h-screen top-0 left-0 fixed  -z-10">
         <Image
           className="object-contain md:object-cover"
@@ -22,7 +22,7 @@ const Hero = () => {
           alt="Insta Ribbon"
         />
       </motion.div>
-      <div className=" grid grid-cols-1 md:grid-cols-2 w-full gap-11 h-[90%]">
+      <div className=" grid grid-cols-1 md:grid-cols-2 w-full gap-11 h-[90%] ">
         <motion.div
           initial={{
             opacity: 0,
@@ -51,7 +51,7 @@ const Hero = () => {
             high-end quality content that sells
           </p>
         </motion.div>
-        <div className="flex justify-center items-center rounded-xl">
+        <div className="flex justify-center items-center rounded-xl ">
           <motion.div
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
@@ -59,10 +59,10 @@ const Hero = () => {
             className="w-full h-72 md:w-[90%]  md:h-[90%] relative z-0 rounded-xl"
           >
             <Image
-              src={"/doings.png"}
+              src={"/logo.png"}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-contain md:object-contain rounded-xl"
+              className="object-cover md:object-cover rounded-xl"
               alt="Intern"
             />
           </motion.div>
